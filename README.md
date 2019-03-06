@@ -83,4 +83,4 @@ new user and db are created with name catalog with password: password
 
 ## References
 
-Source: [Digital Ocean] (https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+Source: [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
