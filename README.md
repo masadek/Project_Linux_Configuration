@@ -39,6 +39,7 @@ Flask-Login==0.1.3
 ## Application Deployment
 
 ### 1- Virtual Host:
+disable the default configuratin and add a file named: FlaskApp.conf with the below configuration
 ```
 <VirtualHost *:80>
 	ServerName 3.120.204.206
@@ -87,3 +88,4 @@ the wsgi fie is in the project folder and it's content as following:
 ## References
 
 Source: [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
+Source: [Flask Documetation](http://flask.pocoo.org/docs/1.0/deploying/mod_wsgi/)
