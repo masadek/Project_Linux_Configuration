@@ -35,7 +35,8 @@ werkzeug==0.8.3
 Flask-Login==0.1.3
 
 ## Application Deployment
-1- Virtual Host:
+
+### 1- Virtual Host:
 ```
 <VirtualHost *:80>
 	ServerName 3.120.204.206
@@ -55,4 +56,31 @@ Flask-Login==0.1.3
     	LogLevel warn
 		CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
 ```
+### 2- Project files
+project is in the following  directory /var/www/project/catalog
+
+### 3- WSGI file
+
+the wsgi fie is in the project folder and it's content as following:
+```
+	#!/usr/bin/python
+	import sys
+	import logging
+	logging.basicConfig(stream=sys.stderr)
+	sys.path.insert(0, "/var/www/project/")
+
+	from catalog import app as application
+	application.secret_key = 'secret key'
+	
+```
+
+## Database
+
+database installed is postgre
+new user and db are created with name catalog with password: password
+
+## References
+
+Source: [Digital Ocean] (https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps)
