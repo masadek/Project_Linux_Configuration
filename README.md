@@ -22,6 +22,7 @@ The server is hosted at Amazon lightsail, using Ubuntu 16.04.6 LTS instance
 ```
   
 ## Software installed
+```
 Apache2
 mod-wsgi
 Postgresql
@@ -33,6 +34,7 @@ sqlalchemy
 oauth2client
 werkzeug==0.8.3
 Flask-Login==0.1.3
+```
 
 ## Application Deployment
 
@@ -54,7 +56,7 @@ Flask-Login==0.1.3
     	</Directory>
     	ErrorLog ${APACHE_LOG_DIR}/error.log
     	LogLevel warn
-		CustomLog ${APACHE_LOG_DIR}/access.log combined
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 
 ```
@@ -77,9 +79,10 @@ the wsgi fie is in the project folder and it's content as following:
 ```
 
 ## Database
-
-database installed is postgre
+```
+database installed is postgre.
 new user and db are created with name catalog with password: password
+```
 
 ## References
 
