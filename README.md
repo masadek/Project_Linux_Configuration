@@ -79,10 +79,10 @@ the wsgi fie is in the project folder and it's content as following:
 ```
 
 ## Database
-```
-database installed is postgre.
-new user and db are created with name catalog with password: password
-```
+
+* database installed is postgre.
+* new user and db are created with name catalog with password: password
+
 
 ## References
 
