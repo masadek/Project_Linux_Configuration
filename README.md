@@ -13,6 +13,7 @@ The server is hosted at Amazon lightsail, using Ubuntu 16.04.6 LTS instance
 * Grader account is added to sudoers.
 * ssh port is changed to 2200
 * password authentication is disabled
+* server time is set to UTC.
 * Allowed ports on firewall:
 ```
   1- Port 80 HTTP
@@ -37,21 +38,21 @@ Flask-Login==0.1.3
 1- Virtual Host:
 ```
 <VirtualHost *:80>
-		ServerName 3.120.204.206
-		ServerAlias 3.120.204.206.xip.io
-		ServerAdmin admin@mywebsite.test
-		WSGIScriptAlias / /var/www/project/catalog.wsgi
-    <Directory /var/www/project/>
-        Order allow,deny
-        Allow from all
-    </Directory>
-    Alias /static /var/www/project/catalog/static
-    <Directory /var/www/project/catalog/static/>
-        Order allow,deny
-        Allow from all
-    </Directory>
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    LogLevel warn
+	ServerName 3.120.204.206
+	ServerAlias 3.120.204.206.xip.io
+	ServerAdmin admin@mywebsite.test
+	WSGIScriptAlias / /var/www/project/catalog.wsgi
+   	<Directory /var/www/project/>
+        	Order allow,deny
+        	Allow from all
+    	</Directory>
+   	 Alias /static /var/www/project/catalog/static
+    	<Directory /var/www/project/catalog/static/>
+        	Order allow,deny
+        	Allow from all
+    	</Directory>
+    	ErrorLog ${APACHE_LOG_DIR}/error.log
+    	LogLevel warn
 		CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
