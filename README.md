@@ -14,9 +14,11 @@ The server is hosted at Amazon lightsail, using Ubuntu 16.04.6 LTS instance
 * ssh port is changed to 2200
 * password authentication is disabled
 * Allowed ports on firewall:
+```
   1- Port 80 HTTP
   2- Port 123 NTP
   3- Port 2200/tcp (for ssh connection)
+```
   
 ## Software installed
 Apache2
@@ -33,6 +35,7 @@ Flask-Login==0.1.3
 
 ## Application Deployment
 1- Virtual Host:
+```
 <VirtualHost *:80>
 		ServerName 3.120.204.206
 		ServerAlias 3.120.204.206.xip.io
@@ -51,3 +54,4 @@ Flask-Login==0.1.3
     LogLevel warn
 		CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+```
