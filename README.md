@@ -4,7 +4,7 @@ The server is hosted at Amazon lightsail, using Ubuntu 16.04.6 LTS instance
 
 ## server details
 * ip address: 3.120.204.206
-* url 3.120.204.206.xip.io or www.mostafa-udacity-catalog.tk
+* url http://3.120.204.206.xip.io or www.mostafa-udacity-catalog.tk
 
 ## server configuration
 * The root user is disabled
